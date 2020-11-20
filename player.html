@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)https://radiosuprema.tk/player/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>::RADIO SUPREMA EN VIVO::</title>
+<link id="maintheme" href="./estyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./jquery-1.11.2.min.js.descarga"></script>
+<script type="text/javascript" src="./jquery.jplayer.min.js.descarga"></script>
+<script type="text/javascript" src="./jquery-1.10.2.min.js.descarga"></script>
+ <script type="text/javascript"> 
+$(window).load(function(){
+function fluctuate(bar) {
+    var hgt = Math.random() * 15;
+    hgt += 1;
+    var t = hgt * 9;
+    
+    bar.animate({
+        height: hgt
+    }, t, function() {
+        fluctuate($(this));
+    });
+}
+
+$(".bar").each(function(i) {
+    fluctuate($(this));
+});
+});//]]> 
+ 
+</script>
+
+ <script type="text/javascript">//<![CDATA[
+     $(document).ready(function(){
+     var streamrcast = {
+         mp3: "https://Fps5.listen2myradio.com:2199/listen.php?ip=78.129.139.48&port=9416&type=s1"
+       },
+       ready = false;
+       $("#jquery_jplayer_rcast").jPlayer({
+         ready: function (event) {
+           ready = true;
+           $(this).jPlayer("setMedia", streamrcast).jPlayer("play");
+         },
+         play: function() {
+           $(this).jPlayer("pauseOthers", 0);
+      $('#volumercast').css('visibility','visible');
+         },
+         pause: function() {
+           $(this).jPlayer("clearMedia");
+      $('#volumercast').css('visibility','hidden');
+         },
+         error: function(event) {
+           if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+             $(this).jPlayer("setMedia", streamrcast).jPlayer("play");
+           }
+         },
+         swfPath: "jPlayer/dist/jplayer",
+         supplied: "mp3",
+       cssSelectorAncestor: "#jp_container_rcast",
+         preload: "none",
+         globalVolume: "true",
+         volume: "100"
+       });
+});
+ 
+</script>
+
+<style type="text/css">
+ .bar {
+    background-color:#FFF;
+    width:5px;
+    height:15px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+ 
+  .sss {
+	color: #FFFFFF;
+}
+</style>
+</head>
+
+<body marginheight="0">
+<div class="cajaSUENA">
+
+<div class="jp-jplayer" id="jquery_jplayer_rcast" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata" src="https://Fps5.listen2myradio.com:2199/listen.php?ip=78.129.139.48&port=9416&type=s1"></audio></div>
+<div aria-label="media player" role="application" class="player jp-audio-stream jp-state-no-volume jp-state-playing" id="jp_container_rcast" style="margin: 0 !important;">
+  
+<div class="playback" style="  background-color: #212121;">
+  <div class="jp-play play" title="Play" style="display: none;"></div>
+    <div class="jp-pause stop" style="" title="Stop"></div>
+</div>
+ 
+<div class="volume-control" style="padding: 50px 111px;">
+  <div class="jp-mute volume-icon" title="Mute" style="display: none;">
+    <svg id="volume" height="28" width="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#525252"><path d="M6 18v12h8l10 10V8L14 18H6zm27 6c0-3.53-2.04-6.58-5-8.05v16.11c2.96-1.48 5-4.53 5-8.06zM28 6.46v4.13c5.78 1.72 10 7.07 10 13.41s-4.22 11.69-10 13.41v4.13c8.01-1.82 14-8.97 14-17.54S36.01 8.28 28 6.46z"></path><path d="M0 0h48v48H0z" fill="none"></path></svg>
+  </div>
+  
+    <div class="jp-unmute volume-icon" style="display: none;" title="Volumen">
+      <svg id="muted" height="28" width="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#525252"><path d="M33 24c0-3.53-2.04-6.58-5-8.05v4.42l4.91 4.91c.06-.42.09-.85.09-1.28zm5 0c0 1.88-.41 3.65-1.08 5.28l3.03 3.03C41.25 29.82 42 27 42 24c0-8.56-5.99-15.72-14-17.54v4.13c5.78 1.72 10 7.07 10 13.41zM8.55 6L6 8.55 15.45 18H6v12h8l10 10V26.55l8.51 8.51c-1.34 1.03-2.85 1.86-4.51 2.36v4.13c2.75-.63 5.26-1.89 7.37-3.62L39.45 42 42 39.45l-18-18L8.55 6zM24 8l-4.18 4.18L24 16.36V8z"></path><path d="M0 0h48v48H0z" fill="none"></path></svg>
+    </div>
+  <div class="volume-slider">
+        <div class="jp-volume-bar progress vol-progress" style="width: 49% !important; display: none;">
+            <div class="jp-volume-bar-value progress-bar active progress-bar-striped progress-bar-success vol-bar" style="display: none;">
+                <div class="circle-control" title="Volume"></div>
+            </div>
+        </div>
+        
+        <div style="margin-top: -8px;float: right;margin-right: -6px;"><a href="www.radiosuprema.tk" target="_parent" style="    font-size: 9px;    margin-top: 17px;    color: #dc8f3e;    font-family: &#39;arial&#39;,&#39;sans-serif&#39;; ">XIOMARA NET</a></div>
+        
+  </div>
+</div>
+ <div class="PLAYTitul"><marquee style="background-color: #232323;    padding: 4px;    margin-top: -2px;    border: 37px;    font-size: 11px;"><span data-shoutcast-value="songtitle">Estas escuchando: Radio Suprema 106.1 FM - Pangoa - Satipo - Junin</span></marquee> </div> <div style="position: relative; margin-top: -19px;  float: right;    margin-left: 300px;    margin-right: -7px;">       
+ 
+  <main>
+                  <div class="eq">
+    <span class="bar" style="height: 11.0417px; overflow: hidden;"></span>
+    <span class="bar" style="height: 2.46965px; overflow: hidden;"></span>
+    <span class="bar" style="height: 6.49299px; overflow: hidden;"></span>
+    <span class="bar" style="height: 14px; overflow: hidden;"></span>
+    <span class="bar" style="height: 13.6684px; overflow: hidden;"></span>
+    <span class="bar" style="height: 7.69585px; overflow: hidden;"> </span>
+</div>
+    </main>
+  </div>
+</div>
+
+
+
+
+</div></body></html>
